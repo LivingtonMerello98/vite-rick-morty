@@ -4,7 +4,7 @@ export default {
     name: 'AppHeader',
     data() {
         return {
-            title: 'lorem'
+            title: 'Rick e Morty App'
         }
     }
 }
