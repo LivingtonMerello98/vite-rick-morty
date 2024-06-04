@@ -25,7 +25,6 @@ export default {
 
 
 main {
-    background-color: grey;
     padding: $py_2;
 
     .container {

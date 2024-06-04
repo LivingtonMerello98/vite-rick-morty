@@ -7,9 +7,9 @@
         margin: 0 auto;
     }
 
-    @mixin col-33 {
+    @mixin col-25 {
         margin: 10px;
-        width: calc(100% / 3 - 20px);
+        width: calc(100% / 4 - 20px);
     }
 
     @mixin row {

@@ -14,7 +14,7 @@ export default {
 <template>
     <header>
         <div class=" text-center py-2 ">
-            <h1>{{ title }}</h1>
+            <h1 class="title">{{ title }}</h1>
         </div>
     </header>
 </template>
@@ -25,7 +25,6 @@ export default {
 @use '../assets/style/variables' as*;
 
 header {
-    background-color: orange;
 
     .py-2 {
         padding: $py_2;
@@ -33,6 +32,10 @@ header {
 
     .text-center {
         text-align: $text-center;
+    }
+
+    .title {
+        font-size: 3rem;
     }
 }
 </style>

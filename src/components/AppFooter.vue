@@ -1,13 +1,20 @@
 <script>
+import { store } from '../store'
 export default {
-    name: 'AppFooter'
+    name: 'AppFooter',
+    data() {
+        return {
+            store
+        }
+    }
+
 }
 </script>
 <template>
     <footer>
         <div class="container">
             <div class="text-center">
-                <span> placeholder</span>
+                <span> {{ store.result }}</span>
             </div>
         </div>
     </footer>
@@ -20,7 +27,6 @@ export default {
 
 footer {
     padding: $py_2;
-    background-color: orange;
 
     .container {
         @include container;
