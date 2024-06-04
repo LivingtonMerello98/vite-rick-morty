@@ -18,7 +18,7 @@ export default {
                 <option value="item 2">item 2</option>
             </select>
             <button @click="$emit('searchEvent', inputText)">search</button>
-            <button @click="$emit('resetEvent')" class="button bg-orange">Reset</button>
+            <button @click="$emit('resetEvent'); inputText = ''" class="button bg-orange">Reset</button>
         </div>
     </div>
 </template>
