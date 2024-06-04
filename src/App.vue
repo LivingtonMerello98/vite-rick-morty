@@ -19,6 +19,16 @@ export default {
       store,
     }
   },
+  methods: {
+    onSearch(inputText) {
+      console.log(inputText);
+      console.log(store.result);
+
+      const filteredResult =
+        store.result.filter((result) => result.name.toLowerCase().includes(inputText.toLowerCase()) || result.status.includes(inputText.toLowerCase()))
+      console.log(filteredResult);
+    }
+  },
   created() {
     axios.get(this.store.apiUrl).then((response) => {
       this.store.result = response.data.results;
@@ -30,7 +40,7 @@ export default {
 
 <template>
   <AppHeader />
-  <AppInput />
+  <AppInput @search-event="onSearch" />
   <AppMain />
   <AppFooter />
 </template>

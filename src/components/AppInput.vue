@@ -1,19 +1,24 @@
 <script>
 export default {
-    name: 'AppInput'
+    name: 'AppInput',
+    data() {
+        return {
+            inputText: ''
+        }
+    }
 }
 </script>
 
 <template>
     <div class="container">
         <div class="text-center">
-            <input type="text">
+            <input type="text" v-model="inputText">
             <select name="" id="" class="mx-1">
-                <option value="item 1"> item 1 </option>
+                <option value="item 1"> select status </option>
                 <option value="item 2">item 2</option>
             </select>
-            <button class="button bg-blue ">Search</button>
-            <button class="button bg-orange">Reset</button>
+            <button @click="$emit('searchEvent', inputText)">search</button>
+            <button @click="$emit('resetEvent')" class="button bg-orange">Reset</button>
         </div>
     </div>
 </template>

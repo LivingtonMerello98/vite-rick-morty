@@ -14,7 +14,7 @@ export default {
     <footer>
         <div class="container">
             <div class="text-center">
-                <span> {{ store.result }}</span>
+                <span> {{ store.info }}</span>
             </div>
         </div>
     </footer>
