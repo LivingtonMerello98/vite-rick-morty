@@ -14,7 +14,7 @@ export default {
     <footer>
         <div class="container">
             <div class="text-center">
-                <span> {{ store.info }}</span>
+                <span> found {{ store.result.length }} characters</span>
             </div>
         </div>
     </footer>
